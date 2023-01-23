@@ -1,0 +1,115 @@
+{
+  "name": "luckly-cli",
+  "version": "0.0.0",
+  "description": "A components library example",
+  "main": "lib/varlet.cjs.js",
+  "module": "es/index.mjs",
+  "typings": "types/index.d.ts",
+  "vetur": {
+    "tags": "highlight/tags.json",
+    "attributes": "highlight/attributes.json"
+  },
+  "web-types": "highlight/web-types.json",
+  "keywords": [
+    "Vue",
+    "UI"
+  ],
+  "license": "MIT",
+  "sideEffects": [
+    "es/**/style/*",
+    "lib/**/style/*",
+    "es/style.js",
+    "lib/style.js",
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "luckly-cli dev",
+    "build": "luckly-cli build",
+    "compile": "luckly-cli compile",
+    "release": "pnpm compile && luckly-cli release",
+    "test": "luckly-cli jest",
+    "create": "luckly-cli create"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "5.1.3"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@varlet/eslint-config": "^2.4.2",
+    "@varlet/icons": "^2.4.2",
+    "@varlet/stylelint-config": "^2.4.2",
+    "@varlet/touch-emulator": "^2.4.2",
+    "@varlet/shared": "^2.4.2",
+    "@vue/test-utils": "^2.0.2",
+    "clipboard": "^2.0.6",
+    "eslint": "^7.30.0",
+    "lint-staged": "^10.5.0",
+    "live-server": "^1.2.1",
+    "lodash-es": "^4.17.21",
+    "prettier": "^2.3.2",
+    "simple-git-hooks": "^2.8.0",
+    "stylelint": "^13.13.1",
+    "typescript": "^4.4.4",
+    "vue": "3.2.25",
+    "vue-router": "4.0.12",
+    "luckly-cli": "1.4.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,vue,less}": "prettier --write",
+    "*.{ts,tsx,js,vue}": "eslint --fix",
+    "*.{vue,css,less}": "stylelint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged --allow-empty --concurrent false",
+    "commit-msg": "pnpm exec varlet-cli commit-lint $1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "ignorePatterns": [
+      "lib/**",
+      "es/**",
+      "umd/**",
+      "site/**",
+      "public/**",
+      "src/*/__tests__/**",
+      "coverage/**",
+      "highlight/**",
+      "types/index.d.ts",
+      ".varlet/**"
+    ],
+    "extends": [
+      "@varlet"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "@varlet/stylelint-config"
+    ],
+    "ignoreFiles": [
+      "lib/**",
+      "es/**",
+      "umd/**",
+      "site/**",
+      "coverage/**",
+      "public/**",
+      "highlight/**",
+      ".varlet/**"
+    ]
+  },
+  "browserslist": [
+    "Chrome >= 54",
+    "iOS >= 10"
+  ],
+  "packageManager": "pnpm@7.9.0",
+  "files": [
+    "es",
+    "lib",
+    "umd",
+    "highlight",
+    "types"
+  ]
+}
