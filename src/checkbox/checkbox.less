@@ -1,0 +1,125 @@
+.Lucky-checkbox {
+  color: #606266;
+  font-weight: 500;
+  line-height: 1;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  outline: none;
+  font-size: 14px;
+  margin-right: 30px;
+  user-select: none;
+  height: 32px;
+  .Lucky-checkbox-input {
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    display: inline-block;
+    line-height: 1;
+    position: relative;
+    vertical-align: middle;
+    .Lucky-checkbox-inner {
+      border: 1px solid #dcdfe6;
+      border-radius: 2px;
+      width: 14px;
+      height: 14px;
+      background-color: #fff;
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      box-sizing: border-box;
+      &:after {
+        width: 3px;
+        height: 7px;
+        border: 1px solid #fff;
+        border-top: 0;
+        border-left: 0;
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 1px;
+        transform: rotate(45deg) scaleY(0);
+        transform-origin: center;
+      }
+    }
+    .Lucky-checkbox-original {
+      opacity: 0;
+      outline: none;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+    }
+  }
+  .Lucky-checkbox-label {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+
+// 选中的样式
+.Lucky-checkbox.is-checked {
+  .Lucky-checkbox-input {
+    .Lucky-checkbox-inner {
+      border-color: #66ccff;
+      background-color: #66ccff;
+      &:after {
+        transform: rotate(45deg) scaleY(1);
+      }
+    }
+  }
+  .Lucky-checkbox-label {
+    color: #66ccff;
+  }
+}
+
+// 禁用时的样式
+.Lucky-checkbox.disabled {
+  cursor: not-allowed;
+  color: #a8abb2;
+  .Lucky-checkbox-input {
+    cursor: not-allowed;
+    .Lucky-checkbox-inner {
+      cursor: not-allowed;
+      background-color: #f5f7fa;
+      border-color: #e4e7ed;
+    }
+  }
+}
+.Lucky-checkbox.disabled.is-checked {
+  .Lucky-checkbox-input {
+    .Lucky-checkbox-inner {
+      background-color: #f5f7fa;
+      border-color: #e4e7ed;
+      &:after {
+        border-color: #6062666e;
+        transform: rotate(45deg) scaleY(1);
+      }
+    }
+  }
+  .Lucky-checkbox-label {
+    color: #a8abb2;
+  }
+}
+
+// 边框样式
+.Lucky-checkbox.is-bordered {
+  padding: 0 15px 0 9px;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  box-sizing: border-box;
+}
+.Lucky-checkbox.is-bordered.is-checked {
+  border-color: #66ccff;
+}
+.Lucky-checkbox.is-bordered.is-checked.disabled {
+  border-color: #ebeef5;
+}
+.Lucky-checkbox.is-bordered.disabled {
+  border-color: #ebeef5;
+}

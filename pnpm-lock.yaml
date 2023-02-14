@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@popperjs/core': ^2.10.2
   '@types/lodash-es': ^4.17.6
+  '@types/node': ^18.11.18
   '@varlet/eslint-config': ^2.4.2
   '@varlet/icons': ^2.4.2
   '@varlet/shared': ^2.4.2
@@ -15,7 +16,7 @@ specifiers:
   lint-staged: ^10.5.0
   live-server: ^1.2.1
   lodash-es: ^4.17.21
-  luckly-cli: 1.4.0
+  luckly-cli: 1.6.0
   prettier: ^2.3.2
   simple-git-hooks: ^2.8.0
   stylelint: ^13.13.1
@@ -29,6 +30,7 @@ dependencies:
 
 devDependencies:
   '@types/lodash-es': 4.17.6
+  '@types/node': 18.11.18
   '@varlet/eslint-config': 2.6.3_yfqovispp7u7jaktymfaqwl2py
   '@varlet/icons': 2.6.3
   '@varlet/shared': 2.6.3
@@ -40,7 +42,7 @@ devDependencies:
   lint-staged: 10.5.4
   live-server: 1.2.2
   lodash-es: 4.17.21
-  luckly-cli: 1.4.0_b4g5pyzobkb4yrq4kgq6lnqx3y
+  luckly-cli: 1.6.0_ex6nxzyfuik6mwexjyhhu5ujvu
   prettier: 2.8.3
   simple-git-hooks: 2.8.1
   stylelint: 13.13.1
@@ -2147,7 +2149,7 @@ packages:
       '@babel/core': 7.20.12
       '@babel/plugin-transform-typescript': 7.20.13_@babel+core@7.20.12
       '@vue/babel-plugin-jsx': 1.1.1_@babel+core@7.20.12
-      vite: 4.0.4_less@3.13.1
+      vite: 4.0.4_3cpdf66i5za5qfguff5eqz7ole
       vue: 3.2.25
     transitivePeerDependencies:
       - supports-color
@@ -2160,7 +2162,7 @@ packages:
       vite: ^4.0.0
       vue: ^3.2.25
     dependencies:
-      vite: 4.0.4_less@3.13.1
+      vite: 4.0.4_3cpdf66i5za5qfguff5eqz7ole
       vue: 3.2.25
     dev: true
 
@@ -6484,8 +6486,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /luckly-cli/1.4.0_b4g5pyzobkb4yrq4kgq6lnqx3y:
-    resolution: {integrity: sha512-SmMh3ixpJGTKHySLgkOdhz2BmzaLapGnIAV5NKHbJQA2nDJ0TOnWKEtKmNKQHRdqrqkpW+sbKZ2efZ7aJNMjXw==}
+  /luckly-cli/1.6.0_ex6nxzyfuik6mwexjyhhu5ujvu:
+    resolution: {integrity: sha512-4ExANj0QNxkXf6q+4Bogwnl/4GKC0tWOHFjaZB5NuQmmEYept5kAfGJiElf7DQ5U+Vd7ImdLg28J81/0KpCtbw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -6533,7 +6535,7 @@ packages:
       slash: 3.0.0
       ts-jest: 26.5.6_vxa7amr3o4p5wmsiameezakoli
       typescript: 4.9.4
-      vite: 4.0.4_less@3.13.1
+      vite: 4.0.4_3cpdf66i5za5qfguff5eqz7ole
       vue: 3.2.25
       vue-jest: 5.0.0-alpha.10_rn2iuujokcldgpc7zoiyo7c6yi
       vue-router: 4.0.12_vue@3.2.25
@@ -9148,7 +9150,7 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite/4.0.4_less@3.13.1:
+  /vite/4.0.4_3cpdf66i5za5qfguff5eqz7ole:
     resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -9173,6 +9175,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 18.11.18
       esbuild: 0.16.17
       less: 3.13.1
       postcss: 8.4.21

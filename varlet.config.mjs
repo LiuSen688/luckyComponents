@@ -2,7 +2,7 @@ export default {
   logo: './logo.svg',
   useMobile: false,
   highlight: {
-    "style": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    style: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css',
   },
   pc: {
     header: {
@@ -44,6 +44,34 @@ export default {
         doc: 'message',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Loading 加载',
+        },
+        doc: 'loading',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Switch 开关',
+        },
+        doc: 'switch',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Radio 单选框',
+        },
+        doc: 'radio',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Checkbox 多选框',
+        },
+        doc: 'checkbox',
+        type: 2,
+      },
     ],
-  }
+  },
 }
