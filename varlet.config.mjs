@@ -44,6 +44,13 @@ export default {
         doc: 'message',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Breadcrumb 面包屑',
+        },
+        doc: 'breadcrumb',
+        type: 2,
+      },
     ],
   }
 }
