@@ -51,6 +51,13 @@ export default {
         doc: 'breadcrumb',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Image 图片',
+        },
+        doc: 'image',
+        type: 2,
+      },
     ],
   }
 }
