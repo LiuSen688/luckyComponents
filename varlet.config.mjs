@@ -65,6 +65,13 @@ export default {
         doc: 'skeleton',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Menu 菜单',
+        },
+        doc: 'menu',
+        type: 2,
+      },
     ],
   }
 }
