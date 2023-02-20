@@ -58,6 +58,13 @@ export default {
         doc: 'image',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Skeleton 骨架屏',
+        },
+        doc: 'skeleton',
+        type: 2,
+      },
     ],
   }
 }
