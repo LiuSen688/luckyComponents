@@ -1,0 +1,24 @@
+.luckly-breadcrumb .luckly-breadcrumb-item {
+  padding-left: 5px;
+  color: gray;
+}
+.luckly-breadcrumb .luckly-breadcrumb-item a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+.luckly-breadcrumb .luckly-breadcrumb-item a:hover {
+  color: #00C48F;
+  transition: all 0.5s;
+}
+.luckly-breadcrumb .luckly-breadcrumb-item .luckly-breadcrumb-inner {
+  padding-right: 5px;
+}
+.luckly-breadcrumb .luckly-breadcrumb-item .Router {
+  color: black;
+  cursor: pointer;
+}
+.luckly-breadcrumb .luckly-breadcrumb-item .Router:hover {
+  color: #00C48F;
+  transition: all 0.5s;
+}
