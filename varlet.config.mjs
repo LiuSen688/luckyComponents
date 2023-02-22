@@ -49,29 +49,49 @@ export default {
           'zh-CN': 'Loading 加载',
         },
         doc: 'loading',
-        type: 2,
-      },
+      },    
+      {
+        text: {
+          'zh-CN': 'Breadcrumb 面包屑',
+        },
+        doc: 'breadcrumb',
+      },   
       {
         text: {
           'zh-CN': 'Switch 开关',
         },
         doc: 'switch',
-        type: 2,
-      },
+      }, 
+      {
+        text: {
+          'zh-CN': 'Image 图片',
+        },
+        doc: 'image',
+      }, 
       {
         text: {
           'zh-CN': 'Radio 单选框',
         },
         doc: 'radio',
-        type: 2,
-      },
+      }, 
+      {
+        text: {
+          'zh-CN': 'Skeleton 骨架屏',
+        },
+        doc: 'skeleton',
+      }, 
       {
         text: {
           'zh-CN': 'Checkbox 多选框',
         },
         doc: 'checkbox',
-        type: 2,
-      },
+      }, 
+      {
+        text: {
+          'zh-CN': 'Menu 菜单',
+        },
+        doc: 'menu',
+      }
     ],
   },
 }
