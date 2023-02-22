@@ -8,6 +8,10 @@
     "allowJs": true,
     "lib": ["esnext", "dom"],
     "allowSyntheticDefaultImports": true,
-    "jsx": "preserve"
-  }
+    "jsx": "preserve",
+    "types": ["node"],
+    "outDir": "build"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build/**/*"]
 }

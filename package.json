@@ -40,11 +40,12 @@
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.6",
+    "@types/node": "^18.11.18",
     "@varlet/eslint-config": "^2.4.2",
     "@varlet/icons": "^2.4.2",
-    "@varlet/shared": "^2.4.2",
     "@varlet/stylelint-config": "^2.4.2",
     "@varlet/touch-emulator": "^2.4.2",
+    "@varlet/shared": "^2.4.2",
     "@vue/test-utils": "^2.0.2",
     "clipboard": "^2.0.6",
     "commitizen": "^4.3.0",
@@ -54,13 +55,13 @@
     "lint-staged": "^10.5.0",
     "live-server": "^1.2.1",
     "lodash-es": "^4.17.21",
-    "luckly-cli": "1.4.0",
     "prettier": "^2.3.2",
     "simple-git-hooks": "^2.8.0",
     "stylelint": "^13.13.1",
     "typescript": "^4.4.4",
     "vue": "3.2.25",
-    "vue-router": "4.0.12"
+    "vue-router": "4.0.12",
+    "luckly-cli": "1.4.0"
   },
   "lint-staged": {
     "*.{ts,tsx,js,vue,less}": "prettier --write",

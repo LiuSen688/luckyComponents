@@ -2,7 +2,7 @@ export default {
   logo: './logo.svg',
   useMobile: false,
   highlight: {
-    "style": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    style: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css',
   },
   pc: {
     header: {
@@ -46,32 +46,52 @@ export default {
       },
       {
         text: {
+          'zh-CN': 'Loading 加载',
+        },
+        doc: 'loading',
+      },    
+      {
+        text: {
           'zh-CN': 'Breadcrumb 面包屑',
         },
         doc: 'breadcrumb',
-        type: 2,
-      },
+      },   
+      {
+        text: {
+          'zh-CN': 'Switch 开关',
+        },
+        doc: 'switch',
+      }, 
       {
         text: {
           'zh-CN': 'Image 图片',
         },
         doc: 'image',
-        type: 2,
-      },
+      }, 
+      {
+        text: {
+          'zh-CN': 'Radio 单选框',
+        },
+        doc: 'radio',
+      }, 
       {
         text: {
           'zh-CN': 'Skeleton 骨架屏',
         },
         doc: 'skeleton',
-        type: 2,
-      },
+      }, 
+      {
+        text: {
+          'zh-CN': 'Checkbox 多选框',
+        },
+        doc: 'checkbox',
+      }, 
       {
         text: {
           'zh-CN': 'Menu 菜单',
         },
         doc: 'menu',
-        type: 2,
-      },
+      }
     ],
-  }
+  },
 }
