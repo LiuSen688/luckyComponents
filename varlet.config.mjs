@@ -44,6 +44,34 @@ export default {
         doc: 'message',
         type: 2,
       },
+      {
+        text: {
+          'zh-CN': 'Breadcrumb 面包屑',
+        },
+        doc: 'breadcrumb',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Image 图片',
+        },
+        doc: 'image',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Skeleton 骨架屏',
+        },
+        doc: 'skeleton',
+        type: 2,
+      },
+      {
+        text: {
+          'zh-CN': 'Menu 菜单',
+        },
+        doc: 'menu',
+        type: 2,
+      },
     ],
   }
 }
