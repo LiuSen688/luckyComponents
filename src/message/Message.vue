@@ -48,3 +48,12 @@ const handleClose = () => {
   isVisible.value = false
 }
 </script>
+
+<style scoped>
+.btnMargin {
+  margin-left: 10px;
+}
+.varlet-site-doc {
+  margin: 0;
+}
+</style>

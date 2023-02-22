@@ -20,9 +20,9 @@ const isShow = ref(false)
 const handleMessage = () => {
   type.value = 'default'
   isShow.value = true
-  setTimeout(() => {
-    isShow.value = false
-  }, 1500)
+  // setTimeout(() => {
+  //   isShow.value = false
+  // }, 1500)
 }
 </script>
 
@@ -31,5 +31,6 @@ const handleMessage = () => {
   margin-left: 10px;
 }
 .varlet-site-doc {
+  margin: 0;
 }
 </style>

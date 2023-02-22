@@ -91,6 +91,12 @@ export default {
           'zh-CN': 'Menu 菜单',
         },
         doc: 'menu',
+      },
+      {
+        text: {
+          'zh-CN': 'Uploader 文件上传',
+        },
+        doc: 'uploader',
       }
     ],
   },
