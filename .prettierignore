@@ -9,6 +9,8 @@ public/**
 types/index.d.ts
 *.md
 package.json
+.cz-config.js
+commitlint.config.js
 
 pnpm-lock.yaml
 pnpm-workspace.yaml
